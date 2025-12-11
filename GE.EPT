@@ -1,0 +1,247 @@
+from IPython.display import display, HTML
+
+html_content = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sertifikat Validasi TOEFL Mockup</title>
+<style>
+    /* Styling Dasar dan Reset */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .container {
+        width: 100%;
+        max-width: 800px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border: 1px solid #ddd;
+    }
+    .header-bar {
+        background-color: #002c6b; /* Biru gelap seperti di gambar */
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .info-section {
+        padding: 20px;
+    }
+    .info-section p {
+        font-size: 0.9em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .certificate-table {
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+    }
+    .certificate-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        font-size: 0.95em;
+    }
+    .certificate-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .score-box {
+        background-color: #4a90e2; /* Biru muda untuk box score */
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .toefl-score {
+        background-color: #e0f7fa; /* Latar belakang untuk skor */
+        text-align: center;
+        padding: 20px 0;
+    }
+    .score-value {
+        font-size: 3em;
+        font-weight: bold;
+        color: #002c6b; /* Biru gelap */
+    }
+    .button-section {
+        text-align: center;
+        padding: 15px 0 25px 0;
+    }
+    .button-back {
+        background-color: #002c6b;
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .footer {
+        background-color: #002c6b;
+        color: white;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+    }
+    .footer-left {
+        width: 50%;
+    }
+    .footer-right {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #f7b538; /* Kuning emas */
+    }
+    .footer a, .footer p {
+        color: white;
+        text-decoration: none;
+        margin: 5px 0;
+        display: block;
+    }
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .logo-text {
+        margin-left: 10px;
+        line-height: 1.2;
+    }
+    .logo-text span {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #f7b538;
+    }
+    .payment-methods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .payment-methods img {
+        width: 50px; /* Ukuran icon pembayaran disesuaikan */
+        height: 30px;
+        background-color: white;
+        padding: 2px;
+        border-radius: 3px;
+        object-fit: contain;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header-bar">
+        Information
+    </div>
+
+    <div class="info-section">
+        <p>Validate the data to confirm that the participant has completed the **GOLDEN ENGLISH PROFICIENCY TEST (GE EPT) at Golden English**</p>
+
+        <table class="certificate-table">
+            <tr>
+                <td>Nomor</td>
+                <td>GE.EPT.02B.55210</td>
+            </tr>
+            <tr>
+                <td>Certificate Date</td>
+                <td>15 November 2025</td>
+            </tr>
+            <tr>
+                <td>Valid Until</td>
+                <td>November 15th, 2026</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Nina Chairani Nasution</td>
+            </tr>
+            <tr>
+                <td>Listening Comprehension</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Structure & Written Expressions</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Reading Comprehension</td>
+                <td>54</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="score-box">
+        Score TOEFL
+    </div>
+
+    <div class="toefl-score">
+        <div class="score-value">563</div>
+    </div>
+
+    <div class="button-section">
+        <a href="#" class="button-back">Back</a>
+    </div>
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <div class="logo-text">
+                    <span>GE</span>
+                    <p style="margin:0; font-size:0.9em; font-weight:normal;">GOLDEN ENGLISH</p>
+                </div>
+            </div>
+            <p>TCC Batavia Tower One Level 6</p>
+            <p>Jl. K.H. Mas Mansyur No.Kav. 126, RT.1/RW.6, Karet Tengsin, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+            <p>Phone: (021) 228 46 193</p>
+            <p>E-mail: admin@golden-course.com</p>
+            <p>Homepage: goldencourse.com</p>
+        </div>
+        <div class="footer-right">
+            <div>
+                <div class="footer-title">TENTANG KAMI</div>
+                <a href="#">Profil Perusahaan</a>
+                <a href="#">Visi & Misi</a>
+                <a href="#">Testimoni</a>
+                <a href="#">Karir</a>
+                <a href="#">Beasiswa</a>
+            </div>
+            <div>
+                <div class="footer-title">METODE PEMBAYARAN</div>
+                <p>E-Payment</p>
+                <div class="payment-methods">
+                    <span style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px;">BCA</span>
+                    <span style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px;">BNI</span>
+                    <span style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px;">OVO</span>
+                    <span style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px;">Dana</span>
+                    <span style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px;">Mandiri</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+"""
+
+# Menampilkan HTML di Google Colab
+display(HTML(html_content))
